@@ -17,7 +17,7 @@ The surveys used on this project were the Javalambre Photometric Local Universe 
 |  J0515 | J-PLUS |          515.0          |   |   W3   |  WISE  |         11560.8         |
 |  rSDSS | J-PLUS |          625.4          |   |   W4   |  WISE  |         22088.3         |
 
-As well as the 16 magnitudes, we also calculated all the 120 possible combinations (also called colors) between them, and the 136 resulting features were used as input for the models. The initial J-PLUS + WISE sample had 1.340.602 objects with measured magnitude values for all 16 filters. After crossing this sample with LAMOST, we obtained 186.232 objects in common between the two, and this was our working sample to tune, train and test the models (the full sample can be found insite the [data](data/) folder).
+As well as the 16 magnitudes, we also calculated all the 120 possible combinations (also called colors) between them, and the 136 resulting features were used as input for the models. The initial J-PLUS + WISE sample had 1.340.602 objects with measured magnitude values for all 16 filters. After crossing this sample with LAMOST, we obtained 186.232 objects in common between the two, and this was our working sample to tune, train and test the models.
 
 ## Hyperparameter Optimization
 We chose to base our predictors on the **[Random Forest][3]** machine learning model, and since many of the 136 input features had little to no valuable information to add to the model, a Recursive Feature Elimination (**[RFE][4]**) was performed on our input data to choose only the best features before passing them to the Random Forest.
@@ -37,11 +37,11 @@ In total, each one of the three STEPPs was tested with 50 different combinations
 **5 Best models**
 |    Combination   |   R2   |
 |:----------------:|:------:|
-|  (45, 0.25, 100) | 0.9688 |
-|  (136, 0.1, 100) | 0.9686 |
-|  (60, 0.25, 100) | 0.9686 |
-|  (60, 0.5, 100)  | 0.9686 |
-| (136, 0.25, 100) | 0.9686 |
+|  (45, 0.25, 100, 1) | 0.9688 |
+|  (136, 0.1, 100, 1) | 0.9686 |
+|  (60, 0.25, 100, 1) | 0.9686 |
+|  (60, 0.5, 100, 1)  | 0.9686 |
+| (136, 0.25, 100, 1) | 0.9686 |
 <br>
 As can be seen on the heatmap, all of the combinations tested resulted in R2 scores above 0.965, and the difference between the best and worst models is very small (around 0.004). Also, as expected, there is almost no difference in the score after n_features = 45 (with the exception of a much greater training time).
 <br>
@@ -54,11 +54,11 @@ It is interesting to point out that every model with n_trees = 100 performed sli
 **5 Best models**
 |    Combination   |   R2   |
 |:----------------:|:------:|
-|  (60, 0.25, 100) | 0.8294 |
-|  (45, 0.25, 100) | 0.8292 |
-|  (45, 0.5, 100)  | 0.8284 |
-|  (60, 0.5, 100)  | 0.8281 |
-| (136, 0.25, 100) | 0.8275 |
+|  (60, 0.25, 100, 1) | 0.8294 |
+|  (45, 0.25, 100, 1) | 0.8292 |
+|  (45, 0.5, 100, 1)  | 0.8284 |
+|  (60, 0.5, 100, 1)  | 0.8281 |
+| (136, 0.25, 100, 1) | 0.8275 |
 <br>
 Although the logg predictors performed considerably worse than the T<sub>eff</sub> predictors, taking into consideration that a R2 score of 0.8294 amounts to a correlation of 91.1% between the predicted and real values, their results are still very good. 
 <br>
@@ -71,11 +71,11 @@ Again, increasing the n_features hyperparameter above 45 brings no real improvem
 **5 Best models**
 |   Combination   |   R2   |
 |:---------------:|:------:|
-| (60, 0.25, 100) | 0.8591 |
-| (45, 0.25, 100) | 0.8591 |
-|  (60, 0.1, 100) | 0.8583 |
-|  (60, 0.5, 100) | 0.8579 |
-|  (45, 0.5, 100) | 0.8579 |
+| (60, 0.25, 100, 1) | 0.8591 |
+| (45, 0.25, 100, 1) | 0.8591 |
+|  (60, 0.1, 100, 1) | 0.8583 |
+|  (60, 0.5, 100, 1) | 0.8579 |
+|  (45, 0.5, 100, 1) | 0.8579 |
 <br>
 The [Fe/H] predictors performed slightly above than the logg predictors, but still considerably below the T<sub>eff</sub> predictors, and a R2 score of 0.8591 amounts to a correlation 92.7% between the predicted and real values (again, a very good result). 
 <br>
@@ -137,11 +137,6 @@ For the metalicity, the best performing model was the one with (n_features = 60,
 8. [Pandas](https://zenodo.org/record/5574486)
 9. [Seaborn](https://joss.theoj.org/papers/10.21105/joss.03021)
 10. [Matplotlib](https://ieeexplore.ieee.org/document/4160265)
-
-
-## Citation
-For information on how to cite this work, follow the link: <br>
-[![DOI](https://zenodo.org/badge/421662798.svg)](https://zenodo.org/badge/latestdoi/421662798)
 
 [1]: <http://www.j-plus.es/survey/instrumentation>
 [2]: <http://svo2.cab.inta-csic.es/theory/fps/index.php?id=WISE>
