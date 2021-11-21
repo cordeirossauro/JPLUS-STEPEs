@@ -45,7 +45,7 @@ In total, each one of the three STEPPs was tested with 50 different combinations
 <br>
 As can be seen on the heatmap, all of the combinations tested resulted in R2 scores above 0.965, and the difference between the best and worst models is very small (around 0.004). Also, as expected, there is almost no difference in the score after n_features = 45 (with the exception of a much greater training time).
 <br>
-It is interesting to point out that every model with n_trees = 100 performed slightly better than its counterpart with n_trees = 50, and that for a fixed value of n_features, a model with max_features = 0.25 performs better than all the others.
+It is interesting to point out that every model with n_trees = 100 performed slightly better than its counterpart with n_trees = 50, and that for a fixed value of n_features, a model with max_features = 0.25 performs better than all the others. Also, all the models witt msl = 10 performed worse than their counterparts with msl = 1.
 <br><br><br>
 
 ### logg Predictor Hyperparameter Tuning
@@ -62,7 +62,7 @@ It is interesting to point out that every model with n_trees = 100 performed sli
 <br>
 Although the logg predictors performed considerably worse than the T<sub>eff</sub> predictors, taking into consideration that a R2 score of 0.8294 amounts to a correlation of 91.1% between the predicted and real values, their results are still very good. 
 <br>
-Again, increasing the n_features hyperparameter above 45 brings no real improvement to the models, and in general the models with n_trees = 100 performed better than their counterparts with n_trees = 50. Also, models with max_features = 0.25 were the best performing ones when compared to others with the same value n_features.
+Again, increasing the n_features hyperparameter above 45 brings no real improvement to the models, and in general the models with n_trees = 100 performed better than their counterparts with n_trees = 50. Also, models with max_features = 0.25 were the best performing ones when compared to others with the same value n_features. Also, all the models witt msl = 10 performed worse than their counterparts with msl = 1.
 <br><br><br>
 
 ### [Fe/H] Predictor Hyperparameter Tuning
@@ -79,7 +79,7 @@ Again, increasing the n_features hyperparameter above 45 brings no real improvem
 <br>
 The [Fe/H] predictors performed slightly above than the logg predictors, but still considerably below the T<sub>eff</sub> predictors, and a R2 score of 0.8591 amounts to a correlation 92.7% between the predicted and real values (again, a very good result). 
 <br>
-For a third time, the increase of n_features above 45 brought no improvement to the models, while an increase from n_trees = 50 to n_trees = 100 resulted in a small increase in performance. Also, with the exception of n_features = 10 and 15, models with max_features = 0.25 were the best performing ones when compared to others with the same value of n_features.
+For a third time, the increase of n_features above 45 brought no improvement to the models, while an increase from n_trees = 50 to n_trees = 100 resulted in a small increase in performance. Also, with the exception of n_features = 10 and 15, models with max_features = 0.25 were the best performing ones when compared to others with the same value of n_features. Also, all the models witt msl = 10 performed worse than their counterparts with msl = 1.
 <br><br><br>
 
 ## Model Training and Testing
