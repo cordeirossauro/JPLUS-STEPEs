@@ -93,9 +93,9 @@ For the effective temperature, the best performing model was the one with (n_fea
 
 |   Metric  |   Value  |
 |:---------:|:--------:|
-|    MAE    |  66.030  |
-|    RMSE   |  92.808  |
-| Max Error | 2081.106 |
+|    MAE    |  66.083  |
+|    RMSE   |  92.810  |
+| Max Error | 2077.188 |
 |     R2    |   0.970  |
 
 <br/><br/><br/><br/><br/>
@@ -107,9 +107,9 @@ For the surface gravity, the best performing model was the one with (n_features 
 |   Metric  | Value |
 |:---------:|:-----:|
 |    MAE    | 0.134 |
-|    RMSE   | 0.202 |
-| Max Error | 3.846 |
-|     R2    | 0.835 |
+|    RMSE   | 0.203 |
+| Max Error | 3.856 |
+|     R2    | 0.833 |
 
 <br/><br/><br/><br/><br/>
 ### [Fe/H] Final Predictor
@@ -120,8 +120,8 @@ For the metalicity, the best performing model was the one with (n_features = 60,
 |   Metric  | Value |
 |:---------:|:-----:|
 |    MAE    | 0.103 |
-|    RMSE   | 0.145 |
-| Max Error | 2.190 |
+|    RMSE   | 0.146 |
+| Max Error | 2.210 |
 |     R2    | 0.860 |
 
 <br/><br/><br/><br/><br/>
