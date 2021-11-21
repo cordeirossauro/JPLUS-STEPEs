@@ -138,6 +138,11 @@ For the metalicity, the best performing model was the one with (n_features = 45,
 8. Michael L. Waskom (2021). seaborn: statistical data visualization. Journal of Open Source Software, 6(60), 3021.
 9. Hunter, J. (2007). Matplotlib: A 2D graphics environment. Computing in Science & Engineering, 9(3), 90–95.
 
+## Citation
+For information on how to cite this work, follow the link: <br>
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5716520.svg)](https://doi.org/10.5281/zenodo.5716520)
+
+
 [1]: <http://www.j-plus.es/survey/instrumentation>
 [2]: <http://svo2.cab.inta-csic.es/theory/fps/index.php?id=WISE>
 [3]: <https://link.springer.com/content/pdf/10.1023/A:1010933404324.pdf>
