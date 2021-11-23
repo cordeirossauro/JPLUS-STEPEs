@@ -222,7 +222,7 @@ def rf_evaluator(HyperParams, X, y, n_splits, n_repeats, verbose = 0):
     metrics (MAE, RMSE, MaxError, R2 Score and elapsed time).
     
     Keyword arguments:
-    Hyperpams - A list containing the combination of hyperpameters to test, in the 
+    Hyperparams - A list containing the combination of hyperpameters to test, in the 
                 format [n_features, n_trees, min_samples_leaf, max_features, criterion]
 
     X - Dataframe containing the input values of the development sample 
@@ -357,7 +357,7 @@ def nn_evaluator(HyperParams, X, y, n_splits, n_repeats, verbose = 0):
     metrics (MAE, RMSE, MaxError, R2 Score and elapsed time).
     
     Keyword arguments:
-    Hyperpams - A list containing the combination of hyperpameters to test, in the 
+    Hyperparams - A list containing the combination of hyperpameters to test, in the 
                 format [FeaturesSize, Epochs, BatchSize, learning_rate, 
                         beta1, beta2, epsilon, structure]
 
