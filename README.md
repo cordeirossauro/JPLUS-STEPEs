@@ -36,7 +36,7 @@ However, before any real training or testing, it was necessary to tune and find 
 In total, each one of the three STEPEs was tested with 64 different combinations of hyperparameters, and the notebooks used for that can be found inside the [hyperparameter_tuning](hyperparameter_tuning/) folder. Below are the main results, where we considered the R2 score as our main metric to optimize:
 
 ### T<sub>eff</sub> Estimator Hyperparameter Tuning
-<img align="left" src="hyperparameter_tuning/teff/rf_teff_R2_heatmap.jpg" width=550>
+<img align="left" src="hyperparameter_tuning/teff/rf_teff_R2_heatmap.jpg" width=500>
 
 **5 Best models**
 |     Combination    |        R2          |
@@ -53,7 +53,7 @@ It is interesting to point out that every model with n_trees = 100 performed sli
 <br><br><br>
 
 ### logg Estimator Hyperparameter Tuning
-<img align="right" src="hyperparameter_tuning/logg/rf_logg_R2_heatmap.jpg" height=550>
+<img align="right" src="hyperparameter_tuning/logg/rf_logg_R2_heatmap.jpg" height=500>
 
 **5 Best models**
 |     Combination    |        R2          |
@@ -70,7 +70,7 @@ Again, increasing the n_features hyperparameter above 45 brings no real improvem
 <br><br><br>
 
 ### [Fe/H] Estimator Hyperparameter Tuning
-<img align="left" src="hyperparameter_tuning/feh/rf_FeH_R2_heatmap.jpg" height=550>
+<img align="left" src="hyperparameter_tuning/feh/rf_FeH_R2_heatmap.jpg" height=500>
 
 **5 Best models**
 |     Combination     |        R2          |
