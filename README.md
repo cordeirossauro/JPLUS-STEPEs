@@ -144,7 +144,7 @@ For the metalicity, the best performing model was the one with (n_features = 60,
 
 ## Citation
 For information on how to cite this work, follow the link: <br>
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5716520.svg)](https://doi.org/10.5281/zenodo.5716520)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5716519.svg)](https://doi.org/10.5281/zenodo.5716519)
 
 
 [1]: <http://www.j-plus.es/survey/instrumentation>
