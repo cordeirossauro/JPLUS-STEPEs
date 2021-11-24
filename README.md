@@ -141,10 +141,11 @@ For the metalicity, the best performing model was the one with (n_features = 60,
 7. The pandas development team. (2020). pandas-dev/pandas: Pandas 1.0.3 (v1.0.3). Zenodo. 
 8. Michael L. Waskom (2021). seaborn: statistical data visualization. Journal of Open Source Software, 6(60), 3021.
 9. Hunter, J. (2007). Matplotlib: A 2D graphics environment. Computing in Science & Engineering, 9(3), 90–95.
+10. Taylor, M. (2005). TOPCAT & STIL: Starlink Table/VOTable Processing Software. In Astronomical Data Analysis Software and Systems XIV (pp. 29).
 
 ## Citation
 For information on how to cite this work, follow the link: <br>
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5716519.svg)](https://doi.org/10.5281/zenodo.5716519)
+[![DOI](https://zenodo.org/badge/430218672.svg)](https://zenodo.org/badge/latestdoi/430218672)
 
 
 [1]: <http://www.j-plus.es/survey/instrumentation>
