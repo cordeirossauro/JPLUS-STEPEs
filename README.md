@@ -4,7 +4,7 @@ Repository for the development of machine learning models that aim to predict, b
 
 ## Data Used
 
-The surveys used on this project were the Javalambre Photometric Local Universe Survey (**J-PLUS**: magnitudes for 12 different filters), the Wide-field Infrared Survey Explorer (**WISE**: magnitudes for 4 different filters), the GAIA Survey (magnitudes for 3 different filters) and the Large Sky Area Multi-Object Fibre Spectroscopic Telescope (**LAMOST**: values for Teff, logg and FeH). The description of the 16 filters used can be found on the table below (details taken from the [JPLUS Official Website][1] and the [SVO Filter Profile Service][2]):
+The surveys used on this project were the Javalambre Photometric Local Universe Survey (**J-PLUS**: magnitudes for 12 different filters), the Wide-field Infrared Survey Explorer (**WISE**: magnitudes for 4 different filters), the GAIA Survey (magnitudes for 3 different filters) and the Large Sky Area Multi-Object Fibre Spectroscopic Telescope (**LAMOST**: values for Teff, logg and FeH). The description of the 19 filters used can be found on the table below (details taken from the [JPLUS Official Website][1] and the [SVO Filter Profile Service][2]):
 
 | Filter | Survey | Central Wavelength (nm) |   | Filter | Survey | Central Wavelength (nm) |
 |:------:|:------:|:-----------------------:|:-:|:------:|:------:|:-----------------------:|
